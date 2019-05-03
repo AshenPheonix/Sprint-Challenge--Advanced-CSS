@@ -77,6 +77,11 @@
       .btn {
         .button();
         font-size: 1.75rem;
+        .animation(white; @btn-bg-color);
+        &:hover{
+          color:@btn-bg-color;
+          background-color: white;
+        }
         @media @phone{
           .button(@btn-bg-color; white; 1rem; 100%)
         }
