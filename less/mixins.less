@@ -5,6 +5,18 @@
     flex-wrap:@wrap;
 }
 
+.button(@bg-color:@btn-bg-color; @btn-color:white ; @padding:1rem; @size:25%){
+    background-color:@bg-color;
+    padding: @padding;
+    color:@btn-color;
+    border-radius: 1rem;
+    width:@size;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .rounded{
     border-radius: 1em;
 }
