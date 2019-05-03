@@ -34,9 +34,35 @@
     }
   }
 
+  @keyframes shake {
+    0%{
+      left:0px;
+      top:0px;
+    }
+    25%{
+      left:5px;
+      top:5px;
+    }
+    50%{
+      left:5px;
+      top:-5px;
+    }
+    75%{
+      left:-5px;
+      top:5px;
+    }
+    100%{
+      left:-5px;
+      top:-5px;
+    }
+  }
+
   #headImage{
+    position: relative;
+    z-index: -1;
     border-radius:5px;
     width:100%;
+    animation:shake 1s alternate infinite;
   }
 
   .visit-planets {
