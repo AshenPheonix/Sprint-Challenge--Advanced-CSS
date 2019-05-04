@@ -1,1 +1,30 @@
 // Navigation code here
+nav{
+    position: sticky;
+    top:0px;
+    width:100%;
+    background-color: @nav-bg;
+    padding-top: 1rem;
+    section{
+        .flex(column);
+        justify-content: center;
+        text-align: center;
+        h2{
+            font-size:@font-large-nav;
+        }
+        ul{
+            .flex();
+            justify-content: center;
+            li{
+                .font-set();
+                a{
+                    padding:1rem;
+                    display: inline-block;
+                    width: 100%;
+                    .text-flatten(@nav-font);
+                    .animation(@nav-font, @nav-bg);
+                }
+            }
+        }
+    }
+}

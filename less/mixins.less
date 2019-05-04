@@ -1,1 +1,40 @@
 // Mixins Here
+.flex(@dir:row,@wrap:nowrap){
+    display: flex;
+    flex-direction: @dir;
+    flex-wrap:@wrap;
+}
+
+.button(@bg-color:@btn-bg-color; @btn-color:white ; @padding:1rem; @size:25%){
+    background-color:@bg-color;
+    padding: @padding;
+    color:@btn-color;
+    border-radius: 1rem;
+    width:@size;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.rounded{
+    border-radius: 1em;
+}
+
+.font-set{
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.text-flatten(@font-color){
+    text-decoration: none;
+    color:@font-color;
+}
+
+.animation(@background-color, @color){
+    transition: background-color .5s, color .5s;
+    &:hover{
+        background-color:@background-color;
+        color:@color;
+    }
+}
